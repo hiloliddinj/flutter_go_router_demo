@@ -1,6 +1,6 @@
 # flutter_go_router_demo
 
-A new Flutter project.
+Flutter Navigation 2.0 based go_router example
 
 ## Getting Started
 

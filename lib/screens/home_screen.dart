@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_go_router_demo/screens/list_screen.dart';
+import 'package:flutter_go_router_demo/screens/other_screen.dart';
 import 'package:go_router/go_router.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -19,6 +20,13 @@ class HomeScreen extends StatelessWidget {
               child: const Text('Start', style: TextStyle(fontSize: 20),),
               onPressed: () {
                 context.goNamed(ListScreen.name);
+              },
+            ),
+            const SizedBox(height: 40),
+            TextButton(
+              child: const Text('Go To Other Screen', style: TextStyle(fontSize: 20),),
+              onPressed: () {
+                context.goNamed(OtherScreen.name);
               },
             ),
           ],
